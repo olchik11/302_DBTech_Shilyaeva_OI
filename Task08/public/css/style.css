@@ -1,0 +1,357 @@
+/* Минималистичный дизайн в нежных тонах */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #d4a5c7;
+    --primary-light: #e8c5dd;
+    --primary-dark: #c08fb0;
+    --secondary: #b8d4e3;
+    --accent: #f5c9b8;
+    --accent-light: #fae0d4;
+    --border: #e8d5e0;
+    --bg: #fefefe;
+    --bg-light: #faf7f9;
+    --text: #5a4a5a;
+    --text-light: #9b8a9b;
+    --soft-pink: #f5e6f0;
+    --soft-lavender: #ede8f5;
+    --soft-peach: #fef4f0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg-light);
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 16px;
+}
+
+/* Кнопки */
+button, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 2px;
+}
+
+button:hover, .btn:hover {
+    background: var(--soft-pink);
+    border-color: var(--primary);
+}
+
+button.back-btn {
+    margin-bottom: 24px;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    font-weight: 500;
+    color: var(--text);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--soft-lavender);
+}
+
+tbody tr:hover {
+    background: var(--soft-pink);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Формы */
+.form-container {
+    background: var(--bg);
+    padding: 40px;
+    margin: 30px 0;
+    max-width: 600px;
+    border: 1px solid var(--border);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: var(--text);
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text);
+    background: var(--bg);
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--soft-peach);
+}
+
+/* Информационные блоки */
+.doctor-info {
+    background: var(--bg);
+    padding: 24px;
+    margin: 24px 0;
+    border-left: 2px solid var(--primary);
+    border: 1px solid var(--border);
+    border-left-width: 2px;
+}
+
+.confirmation {
+    background: var(--bg);
+    padding: 40px;
+    margin: 30px 0;
+    max-width: 600px;
+    border: 1px solid var(--border);
+}
+
+/* Ссылки-действия */
+.actions {
+    white-space: nowrap;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.actions a {
+    display: inline-block;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: var(--bg);
+    transition: all 0.2s;
+}
+
+.actions a:nth-child(1) {
+    background: var(--soft-lavender);
+    border-color: var(--primary);
+}
+
+.actions a:nth-child(1):hover {
+    background: var(--primary-light);
+    color: var(--bg);
+}
+
+.actions a:nth-child(2) {
+    background: var(--soft-peach);
+    border-color: var(--accent);
+}
+
+.actions a:nth-child(2):hover {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.actions a:nth-child(3) {
+    background: var(--soft-lavender);
+    border-color: var(--secondary);
+}
+
+.actions a:nth-child(3):hover {
+    background: var(--secondary);
+    color: var(--bg);
+}
+
+.actions a:nth-child(4) {
+    background: var(--soft-peach);
+    border-color: var(--accent);
+}
+
+.actions a:nth-child(4):hover {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+/* Формы добавления */
+.add-form {
+    background: var(--bg);
+    padding: 40px;
+    margin-top: 40px;
+    border: 1px solid var(--border);
+}
+
+.add-form h3 {
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Итоговые суммы */
+.total {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 24px;
+    padding: 12px 20px;
+    background: var(--soft-lavender);
+    border: 1px solid var(--primary);
+    display: inline-block;
+    color: var(--text);
+}
+
+/* Сообщения */
+.message {
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-left: 2px solid;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left-width: 2px;
+}
+
+.message.success {
+    border-left-color: var(--primary);
+    background: var(--soft-pink);
+}
+
+.message.error {
+    border-left-color: var(--accent);
+    background: var(--soft-peach);
+}
+
+/* Утилиты */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+/* Пустое состояние */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--bg);
+    margin: 30px 0;
+    border: 1px solid var(--border);
+}
+
+.empty-state p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+}
+
+/* Кнопка добавления */
+.add-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-add {
+    font-size: 14px;
+    padding: 12px 24px;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: var(--bg);
+    transition: all 0.2s;
+}
+
+.btn-add:hover {
+    background: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 12px 8px;
+    }
+    
+    .actions {
+        flex-direction: column;
+    }
+    
+    .actions a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .form-container {
+        padding: 24px;
+    }
+}
